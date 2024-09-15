@@ -1,8 +1,10 @@
+import { useRef } from "react";
 import "./App.css";
 
-
-
 function App() {
+  const audioPlayer = useRef();
+  // audioPlayer.current.play()
+
   return (
     <>
       <header>
@@ -37,10 +39,6 @@ function App() {
         </article>
       </header>
       <main>
-        {/* <audio autoPlay>
-          <source src={audio} type="audio/mp4" />
-        </audio> */}
-
         <p>very demure</p>
         <p>farewell</p>
         <p>very mindful</p>
@@ -49,6 +47,16 @@ function App() {
         <article>
           <span>hosted by</span>
           <p>dj natcase</p>
+          <iframe
+            // style={{"border-radius:12px;"}}
+            src="https://open.spotify.com/embed/track/3ClN1LlotU2cgXnpPs017t?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameBorder="0"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          />
         </article>
         <article>
           <p>sunday night</p>

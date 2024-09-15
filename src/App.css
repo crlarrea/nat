@@ -350,5 +350,8 @@ footer article:last-of-type span a {
     font-size: 1rem;
   }
 }
+iframe {
+  padding: 1rem;
+}
 
 /*# sourceMappingURL=App.css.map */
